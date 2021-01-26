@@ -100,10 +100,14 @@ a {
   border-radius: 15px;
 }
 
+.workSpecifics {
+  margin-bottom: 35px;
+}
+
 .workSpecifics_list {
   padding: 0px 10px;
 }
-.workSpecifics_title {
+.heading {
   text-align: center;
   font-weight: 400;
   font-size: 22px;
@@ -165,4 +169,59 @@ a {
 .workSpecifics_text {
   color: white;
   font-size: 15px;
+}
+
+.meetPartner_list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.meetPartner_image {
+  width: 100%;
+}
+
+.meetPartner_name {
+  margin-bottom: 15px;
+}
+
+.meetPartner_about {
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+}
+
+.meetPartner_imageContainer {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.meetPartner_iconContainer {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.meetPartner_iconContainer__red {
+  background-color: #ff4e50;
+}
+
+.meetPartner_iconContainer__blue {
+  background-color: #19d4ca;
+}
+
+.meetPartner_iconContainer__yellow {
+  background-color: #ffa710;
+}
+
+.meetPartner_iconContainer__purple {
+  background-color: #667df3;
 }
