@@ -171,11 +171,18 @@ a {
   font-size: 15px;
 }
 
+.meetPartner_list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .meetPartner_list-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px 40px;
+  max-width: 235px;
+  padding: 15px 0px;
 }
 
 .meetPartner_image {
