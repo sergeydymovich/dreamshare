@@ -28,18 +28,17 @@ a {
   margin-bottom: 35px;
 }
 
-.entrance {
-  width: 100%;
+.main__entrance {
   margin-bottom: 25px;
 }
 
-.entrance_links {
+.entrance__links {
   display: flex;
   justify-content: center;
 }
 
-.signup_link,
-.login_link {
+.signup-button,
+.login-button {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -50,12 +49,12 @@ a {
   text-align: center;
 }
 
-.signup_link {
+.signup-button {
   border: 2px solid white;
   border-radius: 15px;
 }
 
-.title {
+.main__title {
   text-transform: uppercase;
   font-size: 19px;
   font-weight: 400;
@@ -64,7 +63,7 @@ a {
   margin-top: 100px;
 }
 
-.slogan {
+.main__slogan {
   text-transform: uppercase;
   text-align: center;
   font-weight: 400;
@@ -72,14 +71,14 @@ a {
   margin-bottom: 20px;
 }
 
-.slogan_additionalText {
+.main__additional-text {
   font-size: 17px;
   font-weight: 200;
   text-align: center;
   margin-bottom: 15px;
 }
 
-.partner_link {
+.button_primary {
   border-radius: 15px;
   font-size: 14px;
   padding: 12px 0px;
@@ -89,32 +88,27 @@ a {
   cursor: pointer;
 }
 
-.link__red {
+.button_red {
   color: white;
   background-color: #ff4e50;
   border: none;
 }
 
-.signup {
-  border: 2px solid white;
-  border-radius: 15px;
-}
-
-.workSpecifics {
+.work-specifics {
   margin-bottom: 35px;
 }
 
-.workSpecifics_list {
+.work-specifics__list {
   padding: 0px 10px;
 }
-.heading {
+.title__secondary {
   text-align: center;
   font-weight: 400;
   font-size: 22px;
   margin-bottom: 15px;
 }
 
-.workSpecifics_list-item {
+.work-specifics__list-item {
   height: 240px;
   border-radius: 4px;
   margin-bottom: 10px;
@@ -127,7 +121,7 @@ a {
 .workSpecifics_list-item:last-child {
   margin-bottom: 0;
 }
-.step_text {
+.work-specifics__list-item__step {
   text-transform: uppercase;
   background-color: #ff4e50;
   width: 70px;
@@ -139,45 +133,54 @@ a {
   margin-bottom: 15px;
   letter-spacing: 1px;
 }
-.step-one {
+
+.work-specifics__list-item:first-child {
   background: url("./images/step1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.step-two {
+.work-specifics__list-item:nth-child(2) {
   background: url("./images/step2.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.step-three {
+
+.work-specifics__list-item:nth-child(3) {
   background: url("./images/step3.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.workSpecifics_list-item_title {
+.work-specifics__list-item__title {
   color: white;
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 10px;
 }
 
-.workSpecifics_text {
+.work-specifics__list-item__text {
   color: white;
   font-size: 15px;
 }
 
-.meetPartner_list {
+.meet-partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meet-partner__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 15px;
 }
 
-.meetPartner_list-item {
+.meet-partner__list-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -185,28 +188,28 @@ a {
   padding: 15px 0px;
 }
 
-.meetPartner_image {
+.image-container__image {
   width: 100%;
 }
 
-.meetPartner_name {
+.meet-partner__name {
   margin-bottom: 15px;
 }
 
-.meetPartner_about {
+.meet-partner__about {
   text-align: center;
   font-size: 14px;
   color: #666666;
 }
 
-.meetPartner_imageContainer {
+.image-container {
   width: 120px;
   height: 120px;
   position: relative;
   margin-bottom: 15px;
 }
 
-.meetPartner_iconContainer {
+.meet-partner__icon-container {
   width: 30px;
   height: 30px;
   position: absolute;
@@ -217,18 +220,24 @@ a {
   justify-content: center;
 }
 
-.meetPartner_iconContainer__red {
+.icon-container_red {
   background-color: #ff4e50;
 }
 
-.meetPartner_iconContainer__blue {
+.icon-container_blue {
   background-color: #19d4ca;
 }
 
-.meetPartner_iconContainer__yellow {
+.icon-container_yellow {
   background-color: #ffa710;
 }
 
-.meetPartner_iconContainer__purple {
+.icon-container_purple {
   background-color: #667df3;
+}
+
+.button_white {
+  color: #ff4e50;
+  background-color: transparent;
+  border: 2px solid #ff4e50;
 }
