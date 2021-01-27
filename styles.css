@@ -243,6 +243,10 @@ a {
   border: 2px solid #ff4e50;
 }
 
+.discovery-ideas {
+  margin-bottom: 35px;
+}
+
 .discovery-ideas__list {
   padding: 0px 10px;
 }
@@ -314,4 +318,24 @@ a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.search-partners__form {
+  margin: 0px auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.search-partners__text {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #666666;
+}
+
+.search-partners__input {
+  width: 280px;
+  padding: 10px;
+  border: 1px solid #d4d4d4;
+  border-radius: 3px;
+  margin-bottom: 10px;
 }
