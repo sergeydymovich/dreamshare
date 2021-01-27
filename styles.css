@@ -22,18 +22,25 @@ li {
   background: url("./images/70BC48A9-B2F1-4D3D-AAC4-129466DD8111.png");
   background-position: center;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: inline-block;
   width: 100%;
   height: 540px;
   color: white;
-  padding: 20px 30px 0px 30px;
+  padding: 0px 30px;
   margin-bottom: 35px;
 }
 
 .main__entrance {
   margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+.main__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+  margin: 0px auto;
 }
 
 .entrance__links {
@@ -71,7 +78,7 @@ li {
   text-transform: uppercase;
   text-align: center;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 29px;
   margin-bottom: 20px;
 }
 
@@ -104,6 +111,8 @@ li {
 
 .work-specifics__list {
   padding: 0px 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .title__secondary {
   text-align: center;
@@ -114,6 +123,7 @@ li {
 
 .work-specifics__list-item {
   height: 240px;
+  width: 100%;
   border-radius: 4px;
   margin-bottom: 10px;
   padding: 0 30px 20px 20px;
@@ -388,4 +398,59 @@ li {
 
 .footer__list-item {
   padding: 5px 10px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    height: 700px;
+    margin-bottom: 95px;
+  }
+
+  .main__entrance {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-top: 40px;
+    margin-bottom: 150px;
+  }
+  .main__title {
+    font-size: 19px;
+    margin-top: 0;
+    width: auto;
+  }
+
+  .main__slogan {
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
+
+  .main__additional-text {
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+
+  .button_primary {
+    width: 225px;
+  }
+  .work-specifics__list {
+    flex-wrap: nowrap;
+  }
+  .work-specifics__list-item {
+    height: 400px;
+    margin-right: 20px;
+  }
+  .work-specifics__list-item:last-child {
+    margin-right: 0;
+  }
+
+  .meet-partner__list {
+    padding: 0px 140px;
+  }
+
+  .meet-partner .button_primary {
+    width: 180px;
+    border-radius: 20px;
+  }
 }
