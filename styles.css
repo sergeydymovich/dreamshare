@@ -535,12 +535,17 @@ li {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 40px;
+    padding: 40px 0px;
+  }
+
+  .footer__title {
+    margin-bottom: 0;
   }
 
   .footer__list {
     flex-direction: column;
     width: auto;
+    margin-bottom: 0;
   }
   .footer__list-item {
     padding-left: 0;
