@@ -195,6 +195,7 @@ li {
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 15px;
+  max-width: 480px;
 }
 
 .meet-partner__list-item {
@@ -283,7 +284,7 @@ li {
   text-align: center;
 }
 
-.discovery-ideas__list-item:first-child {
+.discovery-ideas__photo-1 {
   background: url("./images/idea1.png");
   background-position: center;
   background-size: cover;
@@ -294,42 +295,42 @@ li {
   margin-bottom: 0px;
 }
 
-.discovery-ideas__list-item:nth-child(2) {
+.discovery-ideas__photo-2 {
   background: url("./images/idea2.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.discovery-ideas__list-item:nth-child(3) {
+.discovery-ideas__photo-3 {
   background: url("./images/idea3.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.discovery-ideas__list-item:nth-child(4) {
+.discovery-ideas__photo-4 {
   background: url("./images/idea4.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.discovery-ideas__list-item:nth-child(5) {
+.discovery-ideas__photo-5 {
   background: url("./images/idea5.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.discovery-ideas__list-item:nth-child(6) {
+.discovery-ideas__photo-6 {
   background: url("./images/idea6.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.discovery-ideas__list-item:nth-child(7) {
+.discovery-ideas__photo-7 {
   background: url("./images/idea7.png");
   background-position: center;
   background-size: cover;
@@ -424,6 +425,8 @@ li {
     flex-direction: row-reverse;
     margin-top: 40px;
     margin-bottom: 150px;
+    max-width: 940px;
+    margin: 40px auto 150px auto;
   }
   .main__title {
     font-size: 19px;
@@ -468,10 +471,6 @@ li {
 
   .meet-partner {
     margin-bottom: 100px;
-  }
-
-  .meet-partner__list {
-    padding: 0px 140px;
   }
 
   .meet-partner .button_primary {
@@ -552,5 +551,11 @@ li {
 
   .design__text {
     text-align: right;
+  }
+}
+
+@media (min-width: 1000px) {
+  .meet-partner__list {
+    max-width: 940px;
   }
 }
