@@ -414,6 +414,7 @@ li {
   .main {
     height: 700px;
     margin-bottom: 95px;
+    padding: 0;
   }
 
   .main__entrance {
@@ -459,6 +460,7 @@ li {
   }
   .work-specifics__list {
     flex-wrap: nowrap;
+    padding: 0%;
   }
   .work-specifics__list-item {
     height: 400px;
